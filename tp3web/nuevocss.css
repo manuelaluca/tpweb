@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Chokokutai&family=Lacquer&family=Lora:ital,wght@0,400..700;1,400..700&family=Luckiest+Guy&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+body {
+    background-color: rgb(245, 42, 6);
+}
+
+
+h1{
+    font-family:"Luckiest Guy", cursive;  color: rgb(7, 172, 7);}
+
+    h4{
+        font-family:"Luckiest Guy", cursive; }
+
+        h5{
+            font-family:"Luckiest Guy", cursive; }
+            h1{
+    font-family:"Luckiest Guy", cursive; }
+
+    {
+        box-sizing: border-box;
+      }
+
+    /* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%; /* Ocupa todo el ancho */
+    }
+  
+    .modal-body {
+      width: 95%; /* Asegura que los modales no sean más grandes que la pantalla */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 14px; /* Reduce el tamaño de la fuente en pantallas pequeñas */
+    }
+  
+    .card {
+      padding: 10px;
+    }
+  }
+  
+}
+      

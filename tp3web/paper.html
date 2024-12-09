@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/papercss@1.9.2/dist/paper.min.css"
+    />
+    <link rel="stylesheet" href="nuevocss.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="paper container">
+      <h1>Phineas y Ferb</h1>
+
+      <label class="paper-btn margin" for="modal-2">Integrantes</label>
+      <input class="modal-state" id="modal-2" type="checkbox" />
+      <div class="modal">
+        <label class="modal-bg" for="modal-2"></label>
+        <div class="modal-body">
+          <label class="btn-close" for="modal-2">X</label>
+          <h4>Integrantes</h4>
+          <p>Ortega Delfina 119105/1</p>
+          <p>Luca Manuela 119071/8</p>
+          <img src="nosotras.jpg" alt="Nosotras" />
+        </div>
+      </div>
+
+      <div class="sm-12 md-7 col">
+        <div class="card">
+          <img src="fondo0.jpg" alt="Card example image" />
+          <div class="card-body">
+            <h4 class="card-title">Historia</h4>
+            <h5 class="card-subtitle">Phineas y Ferb</h5>
+            <p class="card-text">
+              Durante las vacaciones de verano, los hermanastros Phineas y Ferb Fletcher se embarcan en aventuras extraordinarias,
+              creando increíbles inventos que desafían las leyes de la física y la imaginación.
+              Mientras disfrutan de su creatividad, su hermana mayor, Candace, intenta sin éxito exponer sus travesuras a su madre.
+            </p>
+            <label class="paper-btn margin" for="modal-video">Reproducir</label>
+            <input class="modal-state" id="modal-video" type="checkbox" />
+           
+            <div class="modal">
+              <label class="modal-bg" for="modal-video"></label>
+              <div class="modal-body" style="width: 640px; height: 480px;">
+                <label class="btn-close" for="modal-video">X</label>
+                <video id="modalVideo" controls width="600" height="400">
+                  <source src="Phineas and Ferb - Theme song (Latin Spanish).mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        const modalCheckbox = document.getElementById('modal-video');
+        const modalVideo = document.getElementById('modalVideo');
+        modalCheckbox.addEventListener('change', () => {
+          if (!modalCheckbox.checked)
+            modalVideo.pause();
+          }
+        });
+      </script>
+     
+     
+     
+        <div class="sm-12 md-7 col">
+          <div class="card">
+            <img src="phineas2.jpg" alt="Card example image" />
+            <div class="card-body">
+              <h4 class="card-title">Juego</h4>
+              <p class="card-text">
+                Ayuda a Phineas y Ferb a que no sean castigados por su mamá.
+              </p>
+              <label class="paper-btn margin" for="modal-1">Jugar</label>
+              <input class="modal-state" id="modal-1" type="checkbox" />
+              <div class="modal">
+                <label class="modal-bg" for="modal-1"></label>
+                <div class="modal-body">
+                  <label class="btn-close" for="modal-1">X</label>
+                  <iframe src="tpfinalparte2/index.html"frameborder="0" width="640"  height="480"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="sm-12 md-7 col">
+          <div class="card">
+            <img src="fondo3.jpg" alt="Card example image" />
+            <div class="card-body">
+              <h4 class="card-title">Aventura Gráfica</h4>
+              <h5 class="card-subtitle">Tp final parte 1</h5>
+              <p class="card-text">
+                Una aventura gráfica es un tipo de videojuego donde el jugador
+                sigue una historia interactiva resolviendo acertijos y
+                explorando escenarios. El objetivo principal es avanzar a través
+                de la toma de decisiones.
+              </p>
+              <label class="paper-btn margin" for="modal-3">Ver</label>
+              <input class="modal-state" id="modal-3" type="checkbox" />
+              <div class="modal">
+                <label class="modal-bg" for="modal-3"></label>
+                <div class="modal-body">
+                  <label class="btn-close" for="modal-3">X</label>
+                  <iframe src="tpfinalparte1/index.html"frameborder="0" width="640" height="480"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+    </div>
+  </body>
+</html>
